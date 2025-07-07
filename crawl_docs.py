@@ -228,7 +228,7 @@ async def crawl_parallel(urls: List[str], max_concurrent: int = 10):
     if tasks:
         await asyncio.gather(*tasks)
 
-def get_sitemap_urls(sitemap_url: str = "https://ai.pydantic.dev/sitemap.xml") -> List[str]:
+def get_sitemap_urls(sitemap_url: str = "https://developers.arcgis.com/sitemap-index.xml") -> List[str]:
     """Get URLs from Pydantic AI docs sitemap."""
     try:
         response = requests.get(sitemap_url)

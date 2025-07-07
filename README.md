@@ -97,7 +97,7 @@ CREATE TABLE site_pages (
 
 ### Chunking Configuration
 
-You can configure chunking parameters in `crawl_pydantic_ai_docs.py`:
+You can configure chunking parameters in `crawl_docs.py`:
 ```python
 chunk_size = 5000  # Characters per chunk
 ```
@@ -109,15 +109,12 @@ The chunker intelligently preserves:
 
 ## Project Structure
 
-- `crawl_pydantic_ai_docs.py`: Documentation crawler and processor
-- `pydantic_ai_expert.py`: RAG agent implementation
+- `crawl_docs.py`: Documentation crawler and processor
+- `agent.py`: RAG agent implementation
 - `streamlit_ui.py`: Web interface
 - `site_pages.sql`: Database setup commands
 - `requirements.txt`: Project dependencies
 
-## Live Agent Studio Version
-
-If you're interested in seeing how this agent is implemented in the Live Agent Studio, check out the `studio-integration-api` directory. This contains the API endpoint for the production version of the agent that runs on the platform.
 
 ## Error Handling
 
